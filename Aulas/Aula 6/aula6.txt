@@ -3,3 +3,8 @@ Layout responsivo:
 Referências:
 https://material.io/
 https://getbootstrap.com/
+
+Validação HTML:
+https://validator.w3.org/
+Validação CSS:
+https://jigsaw.w3.org/css-validator/
