@@ -10,25 +10,71 @@
 }
 
    /* smartphone portrait*/
-
+   /*layout*/
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Cabeçalho*/
 header{
-    background-color: #ffff00;
     height: 80px;
     border-bottom: 2px solid#a9a9a9;
 }
+
 #logo{
     float: left;
     margin: 10px 0px 0px 10px
 }
+
 #logo img{
-    width:15%;
-    height: 15%;
+    width:65px; 
+    height:65px;
 }
+
+nav{
+    float:right;
+}
+
+#check{
+    display: none;
+}
+
+#mobile{
+    font-size: 3em;
+    margin-right: 15px;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left:-100%;
+    transition: all 0.5s;
+}
+
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #343538;
+}
+
+#check:checked ~ ul{
+    left:0px;
+}
+
 footer{
     background-color: #343538;
     color: #d3d3d3;
@@ -39,15 +85,52 @@ footer{
     /****Midia Queries****/
     /*smartphone landscape*/
     @media (min-width:576px) {
+        .Layout{
+            max-width: 540px;
+            margin: 0 auto; /*centralizar o bloco no disposito*/
+}
 }
     /* tablet portrait*/
     @media (min-width:768px) {
+        .Layout{
+            max-width: 720px;
+        }
+
 footer{
     font-size: 1em;
 }
-}
     /* tablet landscape ou desktop portrait*/
     @media (min-width:992px) {
+        .Layout{
+            max-width: 960px; /*modificação de cabeçalho e menu*/
+        }
+        header{
+             height: 100px;
+         }
+       #logo img{
+       width: 15%;
+       height: 15%;
+   }
+        #mobile{
+       display: none;
+   }
+   nav ul{
+       background-color: #ffffff;
+       position: static;
+       height: auto;
+       margin-top: 15px;
+   }
+   
+   nav ul li {
+       display: inline-block;
+       border:0;
+   }
+
+   nav ul li a {
+       color: #343538;
+   }
+
+}
 }
     /* notebook ou desktop portrait*/
     @media (min-width:1200px) { 
