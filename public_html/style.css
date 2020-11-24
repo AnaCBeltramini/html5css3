@@ -81,32 +81,60 @@ nav ul li a{
     text-align: center;
     padding: 30px 0px 30px 0px;
 }
+/*Contato*/
+#contato{
+    padding:30px;
+}
+#contato h1{
+    margin-bottom: 0px 0px 25px 0px;
+    color: #0000ff;
+}
+
+#contato input[type=text] {
+    width:100%;
+    border: 1px solid #0000ff;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius: 5px;   
+}
+#contato textarea{
+    width:100%;
+    border: 1px solid #0000ff;
+    padding:10px 10px 40px 10px;
+    border-radius: 5px;
+}
+#contato input[type=submit] {
+    background-color: #0000ff;
+    color:#ffffff;
+    border-radius: 5px;
+    border:1px solid #0000ff;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+}
+    
 
 /*Sobre*/
-#Sobre{
-    width: 100%;
-    height: 100vh;
-    
-    
+#sobre{
+    padding: 15px;   
 }
+
 #sobre h1{
     color: #343538;
     font-size: 2.5em;
-    text-align: center;
-    margin-top: 10px;
-    
-    
+    padding-bottom: 7px;  
 }
+
 #sobre img{
-  
+    margin: 0 20px 20px 0;
+    padding: 30px 30px 0px 30px;
+    border-radius: 50%;
 }
 
 #sobre p{
-    text-align: left;
-    padding: 30px 0px 30px 0px;
-
+    font-size: 1.1em;
+    line-height: 1.30em;
+    text-align: justify;
 }
-
 
 footer{
     background-color: #343538;
@@ -115,61 +143,57 @@ footer{
     text-align: center; /*centralização do texto*/
     font-size: 0.875em;
 }
+
     /****Midia Queries****/
     /***smartphone landscape***/
     @media (min-width:576px) {
         .Layout{
             max-width: 540px;
             margin: 0 auto; /*centralizar o bloco no disposito*/
-}
+        }
+
 }
     /***tablet portrait***/
     @media (min-width:768px) {
         .Layout{
             max-width: 720px;
-    
-        }
-        /*vou mexer no sobre*/
-        #sobre h1{
-            padding-top: 30px;
-
         }
 
     footer{
     font-size: 1em;
+    }
 }
     /***tablet landscape ou desktop portrait***/
     @media (min-width:992px) {
         .Layout{
             max-width: 960px; /*modificação de cabeçalho e menu*/
-}
+    }
         header{
         height: 100px;
-}
+    }
         #logo img{
        width: 15%;
        height: 15%;
-}
+    }
         #mobile{
        display: none;
-}
+    }
    nav ul{
        background-color: #ffffff;
        position: static;
        height: auto;
        margin-top: 15px;
-}
+    }  
    nav ul li {
        display: inline-block;
        border:0;
-}
+    }
 
    nav ul li a {
        color: #343538;
+    }
 }
-}
-}
-    /***notebook ou desktop portrait***/
+    /**** notebook ou desktop ****/
     @media (min-width:1200px) { 
         .Layout{
             max-width: 1140px; /*modificação de cabeçalho e menu*/
@@ -177,8 +201,8 @@ footer{
         header{
             height: 120px;
             padding-top: 20px;
-}
-
+        }
+ /* rodapé */
 footer{
      padding: 40px 0px 40px 0px;    
 }

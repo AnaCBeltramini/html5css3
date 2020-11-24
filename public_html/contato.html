@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <title>Template</title>
+    <meta name="description" content="contato">
+    <title>Contato</title>
     <link rel="icon" href="imagens/favicon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,10 +32,18 @@
         </div>
     </header>
 
-    <!--página em construção-->
+    <!--Formulário de Contato-->
 
-    <div id="construcao">
-        <img src="imagens/construcao.png" alt="Site em construção">
+    <div id="contato">
+        <div class="Layout">
+            <h1>Contato</h1>
+            <form action="formulario.php" method= "POST">
+                <input type="text" name="nome" placeholder= "nome">
+                <input type="text" name="e-mail" placeholder= "e-mail">
+                <textarea name="mensagem"placeholder= "mensagem"></textarea>
+              <input type="submit" value="Enviar">
+            </form>
+        </div>
     </div>
     <!--Rodapé-->
     <footer>
@@ -43,11 +51,10 @@
     </footer>
     <p>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px"
-                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                 alt="CSS válido!" />
-            </a>
-        </p>
+        </a>
+    </p>
 </body>
 
 </html>
