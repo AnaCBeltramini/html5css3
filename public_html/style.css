@@ -75,6 +75,31 @@ nav ul li a{
     right:0px;
 }
 
+/*Banner*/
+#banner{
+    background: url(imagens/banner.jpg) center;
+    height: 50vh; /*100% da altura*/
+    background-size: cover; /*mantem a mesma proporção independente da tela*/
+    /*centralizar o conteúdo dentro do banner (vertical/Horizontal)*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+  
+}
+
+#banner h1{
+    font-size: 2em;
+    color: #ffffff;
+} 
+
+#banner h2{
+    display:none;
+
+}
+
 /*Site em constução*/
 
 #construcao{
@@ -202,6 +227,22 @@ footer{
             height: 120px;
             padding-top: 20px;
         }
+        #banner{
+            height: 100vh;
+            background-attachment: fixed; /*fixa o banner na rolagem da página*/
+        }
+    
+        #banner h1{
+            font-size: 3em;
+    
+        }
+
+         #banner h2{
+            display: block;
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
  /* rodapé */
 footer{
      padding: 40px 0px 40px 0px;    
